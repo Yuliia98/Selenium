@@ -1,0 +1,13 @@
+D:\Selenium\Selenium\Selenium\bin\Debug\netstandard2.0\Selenium.deps.json
+D:\Selenium\Selenium\Selenium\bin\Debug\netstandard2.0\Selenium.dll
+D:\Selenium\Selenium\Selenium\obj\Debug\netstandard2.0\Selenium.csprojAssemblyReference.cache
+D:\Selenium\Selenium\Selenium\obj\Debug\netstandard2.0\Selenium.csproj.CoreCompileInputs.cache
+D:\Selenium\Selenium\Selenium\obj\Debug\netstandard2.0\Selenium.AssemblyInfoInputs.cache
+D:\Selenium\Selenium\Selenium\obj\Debug\netstandard2.0\Selenium.AssemblyInfo.cs
+D:\Selenium\Selenium\Selenium\bin\Debug\netstandard2.0\NUnit3.TestAdapter.dll
+D:\Selenium\Selenium\Selenium\bin\Debug\netstandard2.0\NUnit3.TestAdapter.pdb
+D:\Selenium\Selenium\Selenium\bin\Debug\netstandard2.0\nunit.engine.dll
+D:\Selenium\Selenium\Selenium\bin\Debug\netstandard2.0\nunit.engine.api.dll
+D:\Selenium\Selenium\Selenium\bin\Debug\netstandard2.0\Selenium.pdb
+D:\Selenium\Selenium\Selenium\obj\Debug\netstandard2.0\Selenium.dll
+D:\Selenium\Selenium\Selenium\obj\Debug\netstandard2.0\Selenium.pdb
