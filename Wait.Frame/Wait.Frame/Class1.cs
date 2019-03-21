@@ -41,11 +41,15 @@ namespace Wait.Frame
         [Test]
         public void Test2()
         {
+            var expectedString = "Knowledge increases by sharing but not by saving. Please share this website with your friends and in your organization.";
             IWebDriver driver = new ChromeDriver();
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             driver.Navigate().GoToUrl(link2);
             IWebElement pressButton = wait.Until(x => x.FindElement(By.Id("timingAlert")));
             pressButton.Click();
+
+            var actualString = driver.SwitchTo().Alert().Text;
+            Assert.AreEqual(expectedString, actualString);
 
             //driver.Quit();
 
