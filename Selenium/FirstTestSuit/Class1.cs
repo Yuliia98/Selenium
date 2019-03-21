@@ -26,7 +26,7 @@ namespace FirstTestSuit
                 IWebElement element = driver.FindElement(By.Id("search"));
                 element.SendKeys(search1);
                 element.Submit();
-                var list = driver.FindElements(By.XPath("//div[contains(text(),'MacBook') and @class='category-products']"));
+                var list = driver.FindElements(By.XPath("//div[@class='category-products']"));
                 var value = list.All(p => p.Text.Contains(search1));
                 Assert.IsTrue(value,"Search elemets don't contain 'MacBook' in title");
                 driver.Quit();
@@ -71,15 +71,10 @@ namespace FirstTestSuit
         public void Test4()
         {
             var filters = new List<string>() { "Ціна, грн", "Виробник", "Швидкий вибір", "Діагональ екрану","Розширення екрану", "Тип телевізора", "Частота оновлення", "Операційна система", "Smart TV", "HDR", "Тв-тюнер","Колір" };
-            var actualFilters = new List<string>();
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl(link3);
-            var list = driver.FindElements(By.XPath("//div[@class='filter-name-container']"));
-            foreach(var filter in list)
-            {
-                actualFilters.Add(filter.Text);
-            }
-            Assert.AreEqual(filters,actualFilters);
+            var list = driver.FindElements(By.XPath("//div[@class='filter-name-container']")).Select(c=>c.Text);        
+            Assert.AreEqual(filters, list);
             driver.Quit();
         }
         }
